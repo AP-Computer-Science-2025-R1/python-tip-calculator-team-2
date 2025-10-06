@@ -2,14 +2,15 @@ restaurant_name = 'Gyu-Kaku'
 restaurant_address = '44-45 21st St, Long Island City, NY 11101'
 bill_subtotal = 148.58
 
-# Greet User Function- Arshia
+# Greet User Function- Akib
 def greet_user():
     print("Welcome to the NYC Tip Calculator! \n This calculator is for", restaurant_name, "at", restaurant_address, ".")
     print("--------------------------------------------------------------------------------")
 
 # Get Bill Total- Akib
 def get_bill_total():
-    print("pls do this part")
+    total = float(input("Enter your bill total: $))
+    return total
 
 # Calculate NY Tax- Stephanie
 def calculate_ny_tax():
