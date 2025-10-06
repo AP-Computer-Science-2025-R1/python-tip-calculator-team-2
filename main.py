@@ -24,7 +24,8 @@ def get_bill_total():
 # Calculate NY Tax- Stephanie
 def calculate_ny_tax():
     global bill_subtotal
-    print("pls complete")
+    ny_tax = bill_subtotal * 0.08875
+    return ny_tax
 
 # Get Tip Percentage- Arshia
 def get_tip_percentage():
@@ -99,6 +100,6 @@ def main():
     print("NYC Tax (8.875%):", ny_tax)
     print("Tip (", tip_value, "):", tip)
     print("You will be splitting your bill amongst", split_number, "person/people. Your total for each person without tip will be $", split_total)
-    print("Your absolute total without division will be:", bill_subtotal + total_tip)
+    print("Your absolute total without division will be:", bill_subtotal + total_tip + ny_tax)
 
 main()
